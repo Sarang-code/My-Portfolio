@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+* {
+    color: black;
+}
+
+body {
+    background-color: white;
+    font-family: "Poppins", serif;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.hrFirst {
+    width: 50%;
+}
+
+hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8c80f7;
+}
+
+.firstSection {
+    width: 100%;
+    height: 200px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #D5DBDB;
+
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.personName {
+    font-size: 70px;
+    color: blue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.personDesignation {
+    color: blue;
+
+    display: flex;
+    justify-content: center;
+}
+
+.contactBar {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0px;
+
+    display: flex;           
+    justify-content: center;
+    gap: 50px;
+}
+
+.contactBar a {
+    text-decoration: none;
+}
+
+.contactBar a:hover {
+    color: blue;
+}
+
+.contactItem:hover {
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+
+.secondSection {
+    margin-top: 0;
+    margin-right: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.descriptionPara {
+    text-align: center;
+}
+
+.edTblSec {
+    padding-bottom: 30px;
+}
+
+.educationTable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.edTableCaption {
+    color: blue;
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.educationTable th {
+    border: 1px solid black;
+    text-align: center;
+    color: blue;
+    font-weight:unset;
+    padding: 5px;
+}
+
+.educationTable td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.educationTable td a {
+    text-decoration: none;
+}
+
+.educationTable td a:hover {
+    color: blue;
+}
+
+.skills {
+    color: blue;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.skills {
+    text-decoration: none;
+}
+
+.skillsList {
+    list-style-type: disc;
+}
+
+.skillsList li::marker {
+    color: blue;
+}
+
+/* a:hover {
+    color: blue;
+} */
+
+
+
+
