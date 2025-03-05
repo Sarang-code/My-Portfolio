@@ -5,29 +5,52 @@
 }
 
 body {
-    background-color: white;
+    background-color: #D5DBDB;
     font-family: "Poppins", serif;
     margin: 0;
     border: 0;
     padding: 0;
 }
 
-.hrFirst {
-    width: 50%;
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, serif;
+    background-color: #f4f4f9;  Very light grey background for a clean look
+    color: #333;  Dark grey text for readability
+    margin: 0;
+    padding: 0;
+    opacity: 0; Start with opacity 0 for fade-in effect
+    animation: pageFadeIn 1s ease-out forwards;  Fade-in effect for entire page
+} */
+
+
+
+@keyframes pageFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
+.hrFirst {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     border: 1px solid #8c80f7;
 }
 
+/* hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
+
 .firstSection {
     width: 100%;
-    height: 200px;
+    height: fit-content;
     margin: 0;
     border: 0;
-    padding: 0;
+    padding: 0px;
     background-color: #D5DBDB;
 
     position: sticky;
@@ -52,9 +75,17 @@ hr {
 }
 
 .contactBar {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    /* width: 100%; */
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    
 
     display: flex;           
     justify-content: center;
@@ -81,37 +112,90 @@ hr {
     margin-left: 10px;
 }
 
+/* Description */
 .descriptionPara {
     text-align: center;
+    font-size: 1em;
+    padding: 30px;
+    background-color: #ECF0F1;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 15px;
+    /* color: #2C3E50; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    /* transform: translateY(3px); */
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.descriptionPara:hover {
+    background-color: #D5DBDB;
+    border-color: #8c80f7;
+    /* transform: translateY(-5px); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .edTblSec {
-    padding-bottom: 30px;
+    margin: 15px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 35px;
+    padding-left: 10px;
+    background-color: #ECF0F1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.edTblSec:hover {
+    background-color: #D5DBDB;
+    border-color: #8c80f7;
+    /* transform: translateY(-5px); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .educationTable {
-    width: 90%;
+    /* width: 90%; */
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
 }
 
+/* .educationTable:hover {
+    background-color: #D5DBDB;   
+} */
+
+/* .educationTable {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+} */
+
 .edTableCaption {
     color: blue;
-    font-size: 25px;
-    padding-left: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+    /* padding-left: 10px; */
 }
 
 .educationTable th {
-    border: 1px solid black;
+    border: 1px solid #8c80f7;
     text-align: center;
     color: blue;
-    font-weight:unset;
+    font-weight: unset;
     padding: 5px;
 }
 
 .educationTable td {
-    border: 1px solid black;
+    border: 1px solid #8c80f7;
     text-align: center;
     padding: 5px;
 }
@@ -124,28 +208,60 @@ hr {
     color: blue;
 }
 
-.skills {
+.skillSection {
+    margin: 10px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    background-color: #ECF0F1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.skillSection:hover {
+    background-color: #D5DBDB;
+    border-color: #8c80f7;
+    /* transform: translateY(-5px); */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.flexDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.technicalSkillCaption {
     color: blue;
-    font-size: 25px;
-    padding: 10px;
+    font-size: 20px;
 }
 
-.skills {
-    text-decoration: none;
+.softSkillCaption {
+    color: blue;
+    font-size: 20px;
 }
 
-.skillsList {
+.skillTypes {
+    margin: 15px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: #ECF0F1;
+    border-radius: 15px;
+    box-shadow: 0.5px 1px 8px 1px #8c80f7;
+    border: 2px solid transparent;
+    animation: fadeInUp 1s ease-out 1.5s forwards;
+    transition: all 0.3s ease-in-out;
+}
+
+.listDeco {
     list-style-type: disc;
 }
 
-.skillsList li::marker {
+.listDeco li::marker {
     color: blue;
 }
-
-/* a:hover {
-    color: blue;
-} */
-
-
-
-

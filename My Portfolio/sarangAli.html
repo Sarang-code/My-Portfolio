@@ -42,17 +42,17 @@
     <section class="secondSection">
 
         <!--Description-->
-        <section>
+        <section class="descriptionParaSec">
             <p class="descriptionPara">
                 To pursue a highly rewarding career, seeking job/internships in a challenging and healthy environment, where I can utilize my skills and knowledge effectively and efficiently for the growth of the organization. I want to serve the community and my nation with my skills and knowledge.
             </p>
         </section>
 
-        <hr>
+        <!-- <hr> -->
 
         <!--Education details Table-->
         <section class="edTblSec">
-            <span class="edTableCaption">Education</span>
+            <div class="edTableCaption">Education</div>
             <table class="educationTable">
                 <thead>
                     <tr>
@@ -89,19 +89,33 @@
             </table>
         </section>
 
-        <hr>
+        <!-- <hr> -->
 
         <!--Skills-->
-        <span class="skills">Skills</span>
-        <ul class="skillsList">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>JavaScript</li>
-            <li>JQuery</li>
-            <li>React</li>
-            <li>React Native</li>
-        </ul>
+        <section class="skillSection">
+            <!-- <div class="skillCaption">Skills</div> -->
+            <div class="flexDiv">
+                <div class="skillTypes technicalSkills">
+                    <div class="technicalSkillCaption">Technical Skills</div>
+                    <ul class="listDeco technicalSkillsList">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>React Native</li>
+                    </ul>
+                </div>
+                <div class="skillTypes softSkills">
+                    <div class="softSkillCaption">Soft Skills</div>
+                    <ul class="listDeco softSkillsList">
+                    <li>Communication</li>
+                    <li>Leadership</li>
+                    <li>presentation</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </section>
 </body>
 </html>
